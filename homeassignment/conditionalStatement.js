@@ -1,32 +1,34 @@
-function launchBrowser(browserName){
+function launchBrowser(){
 
 if (browserName==="chrome")
 {
-   return "148.0.7778.97"
+   console.log("148.0.7778.97");
 }
 else
-{    return "browser not supported, please enter the valid browser for windows environment"
+{    console.log("browser not supported, please enter the valid browser for windows environment");
 }
-
-
-console.log(launchBrowser(browserName));
 }
+let browserName = "chrome";
+launchBrowser();
 
 
-function runTests(testType){
+
+function runTests(){
     switch(testType)
     {
-        case 1:smoke
+        case 1:
+         console.log("smoke");
         break;
-        case 2:regression
+        case 2:
+         console.log("regression");
         break;
-        case3:sanity
+        case 3:
+         console.log("sanity");
         break;
         default:
             console.log("smoke")
             break;
     }
-let testType=1
-
-console.log(runTests(testType));
 }
+let testType=2
+runTests(testType);
